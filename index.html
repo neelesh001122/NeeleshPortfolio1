@@ -245,7 +245,7 @@ footer{padding:2rem 3rem;border-top:1px solid var(--border);text-align:center;fo
 <span class="ln">3</span>&nbsp;<br>
 <span class="kw"><span class="ln">4</span>class</span> <span class="fn">Developer</span>:<br>
 <span class="ln">5</span>&nbsp; <span class="vr">name</span> = <span class="str">"Neelesh Verma"</span><br>
-<span class="ln">6</span>&nbsp; <span class="vr">role</span> = <span class="str">"Python Dev / Data Analyst"</span><br>
+<span class="ln">6</span>&nbsp; <span class="vr">role</span> = <span class="str">"Data Analyst"</span><br>
 <span class="ln">7</span>&nbsp; <span class="vr">location</span> = <span class="str">"Kanpur, India"</span><br>
 <span class="ln">8</span>&nbsp;<br>
 <span class="ln">9</span>&nbsp; <span class="vr">skills</span> = [<br>
@@ -288,7 +288,7 @@ footer{padding:2rem 3rem;border-top:1px solid var(--border);text-align:center;fo
       </div>
       <div class="ip reveal">
         <div class="ipt">// QUICK INFO</div>
-        <div class="ipr"><span class="ico">⚡</span> Kanpur, Uttar Pradesh, India</div>
+        <div class="ipr"><span class="ico">⚡</span> Noida, Uttar Pradesh, India</div>
         <div class="ipr"><span class="ico">🎓</span> B.Tech — Information Technology</div>
         <div class="ipr"><span class="ico">☕</span> Loves exploring new cafes</div>
         <div class="ipr"><span class="ico">🚀</span> Open to Data / Python roles</div>
@@ -514,7 +514,7 @@ footer{padding:2rem 3rem;border-top:1px solid var(--border);text-align:center;fo
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
 // EmailJS init — replace with your own Public Key from emailjs.com
-emailjs.init('YOUR_PUBLIC_KEY');
+emailjs.init('BUo15aDWWxftlfdVd');
 
 function sendMsg(){
   const name=document.getElementById('f-name').value.trim();
@@ -539,9 +539,9 @@ function sendMsg(){
   status.textContent='';status.className='fmsg';
 
   // EmailJS send — replace SERVICE_ID and TEMPLATE_ID after setup on emailjs.com
-  emailjs.send('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',{
-    from_name: name,
-    from_email: email,
+  emailjs.send('service_omvdf5o','template_qh1ifv4',{
+    user_name: name,
+    user_email: email,
     subject: subject||'Portfolio Contact',
     message: msg,
     to_email: 'neeleshdxn2u@gmail.com'
